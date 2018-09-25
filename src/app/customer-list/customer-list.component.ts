@@ -25,7 +25,7 @@ export class CustomerListComponent implements OnInit {
   }
 
   onDelete($key){
-      if (confirm('Are you sure to delete this Record??')){
+      if (confirm('Are you sure you want to delete this Record?')){
         this.customerService.deleteCustomer($key);
         this.showDeletedMessage = true;
         setTimeout(() => this.showDeletedMessage =false ,3000);
